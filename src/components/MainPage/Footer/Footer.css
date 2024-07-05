@@ -1,0 +1,41 @@
+.footer {
+    position: relative; /* Establece posición relativa para posicionar elementos absolutamente */
+    background-color: #333; /* Color de fondo del footer */
+    background-color: rgb(24, 24, 24); /* Color de fondo rojo */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 20px;
+    height: 70vh; /* Altura del footer del 70% del viewport */
+    display: flex; /* Usa flexbox para alinear verticalmente */
+    flex-direction: column; /* Dirección de columnas para apilar elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.enlace_footer {
+    color: white;
+}
+
+.titulo_footer {
+    font-size: 50px; /* Tamaño de fuente del título */
+    text-align: center; /* Alineación centrada del texto */
+    font-family: Arial, sans-serif; /* Fuente */
+    margin-bottom: 40px; /* Margen inferior para separar del texto de derechos de autor */
+    padding-bottom: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreado */
+    color: white;
+}
+  
+.copyright_footer {
+    position: absolute; /* Posición absoluta dentro del footer */
+    bottom: 10px; /* Distancia desde la parte inferior */
+    left: 50%; /* Alinea a la mitad del contenedor */
+    transform: translateX(-50%); /* Ajusta para centrar horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+    width: 100%; /* Ajusta el ancho al 100% */
+    color: rgb(95, 95, 95); /* Color de texto gris */
+    font-family: Arial, sans-serif; /* Fuente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreado */
+    margin-top: 10px; /* Margen superior para separar del título */
+    padding-bottom: 2%;
+}

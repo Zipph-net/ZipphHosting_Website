@@ -1,0 +1,10 @@
+.PlanView {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.PlanView img {
+  display: block;
+  max-width: 100%;
+}

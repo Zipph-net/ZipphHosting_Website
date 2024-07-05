@@ -1,0 +1,40 @@
+.products {
+    margin-top: 20px;
+    height: 100vh;
+    background-image: url(https://images.alphacoders.com/902/902096.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.products h2 {
+    color: white;
+}
+
+.plan-list {
+    display: flex;
+    gap: 20px; /* Reducir el gap para mejor ajuste */
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    max-width: 100%;  
+    overflow: hidden; 
+    box-sizing: border-box;
+    padding: 10px; /* Añadir padding para mejor ajuste */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+}
+
+.products article {
+    text-align: center; /* Alinea el texto horizontalmente al centro */
+    font-size: 50px; /* Tamaño de fuente */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    padding-top: 5%; /* Espacio superior */
+    margin-bottom: -8%; /* Margen inferior negativo */
+    color: rgb(0, 0, 0); /* Color de texto blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreado */
+}
+
+
+

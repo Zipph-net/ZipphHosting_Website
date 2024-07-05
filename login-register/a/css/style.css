@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: black;
+}
+
+/*
+body {
+    background-image: url(../img/hosting.jpg);
+}
+
+
+body::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; 
+    pointer-events: none;
+} 
+*/
+
+/*MAIN*/
+
+main {
+    color: black
+}
+
+/*============================================================*/
+
+/*Contenedor Infosv*/
+.contenedor__infosv {
+    height: 100vh;
+    background-image: url(../img/hosting.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.subcontenedor__infosv {
+    padding-top:  100px;
+    color: white;
+}
+
+/*Contenedor Ofertas*/
+.contenedor__ofertas {
+    margin-top: 20px;
+    height: 70vh;
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*Contenedor Mas*/
+.contenedor__mas {
+    margin-top: 20px;
+    height: 70vh;
+    background-image: url(../img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+footer {
+    margin-top: 20px;
+    background: red;
+}
+
+/*============================================================*/
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+  
+.contenedor__barra {
+    width: 100%;
+    height: 80px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: black;
+    padding: 0px 20px;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between; /* Ajuste clave para separar los elementos */
+    align-items: center;
+}
+  
+.menu_barra {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+  
+  /* Botón Login */
+.bienvenido_button {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Ajusta el margen según sea necesario */
+}
+  
+.bienvenido_button > a {
+    font-size: small;
+    background: rgba(255, 0, 0, 0.568);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-right: 20px; /* Ajuste para separar el botón de los demás */
+    margin-left: -20px;
+}
+
+.bienvenido_button > a:hover {
+    background: red
+}
+
+.bienvenido_button ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-transform: none;
+    font-weight: 500;
+    top: 80px;
+    right: -35px; /* Ajusta este valor según sea necesario */
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.87); /* Controla la transparencia aquí */
+    z-index: 10;
+    transition: opacity 300ms ease, transform 300ms ease; /* Se han separado las transiciones */
+    list-style: none;
+    right: 0;
+}
+
+.bienvenido_button:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-5px); /* Añade un pequeño desplazamiento para mejorar la apariencia */
+    top: 62px;
+    right: 30px;
+}
+
+.bienvenido_button ul li a {
+    display: block;
+    color: white;
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-right: 14px;
+    padding: 10px 20px; /* Aumenta el espacio de clic para una mejor experiencia de usuario */
+    font-size: 14px;
+    transition: background 300ms ease; /* Se ha separado la transición */
+}
+
+.bienvenido_button ul li a:hover {
+    border-radius: 3px;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+/*Menu interactivo*/
+nav {
+    height: 100%; 
+}
+
+nav > ul {
+    height: 100%;
+    display: flex;
+}
+
+nav > ul > li {
+    height: 100%;
+    list-style: none;
+    position: relative;
+
+}
+
+nav > ul > li:first-child > a {
+    background-image: url(../img/favicon.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+nav > ul > li:first-child:hover > a {
+    background-image: url(../img/favicon.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav > ul > li > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+}
+
+nav > ul > li > a:hover {
+    background: #1c1c1d;
+}
+
+/*SUBMENU*/
+
+nav ul li ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-transform: none;
+    font-weight: 500;
+    top: 80px;
+    right: -35px; /* Ajusta este valor según sea necesario */
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7); /* Controla la transparencia aquí */
+    border-radius: 0 0 15px 15px;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    z-index: 10;
+    transition: opacity 300ms ease, transform 300ms ease; /* Se han separado las transiciones */
+    list-style: none;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-5px); /* Añade un pequeño desplazamiento para mejorar la apariencia */
+}
+
+nav ul li ul::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent rgba(255, 0, 0, 0.5) transparent;
+}
+
+nav ul li ul li a {
+    display: block;
+    color: white;
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-right: 14px;
+    padding: 10px 20px; /* Aumenta el espacio de clic para una mejor experiencia de usuario */
+    font-size: 14px;
+    transition: background 300ms ease; /* Se ha separado la transición */
+}
+
+nav ul li ul li a:hover {
+    border-radius: 3px;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+
+
+

@@ -1,0 +1,38 @@
+.Card {
+  width: 330px;
+  height: 450px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #3333;
+  background-color: #343a46;
+  padding: 10px;
+  padding-top: 30px;
+  text-align: center;
+  background-image: url(https://thumbs.dreamstime.com/b/fondo-retro-del-papel-estilo-grunge-beige-ligero-vertical-107645964.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Card:hover {
+  background-image: url(https://i.pinimg.com/originals/2b/9b/8c/2b9b8cd3f380c6b3182fbcca7e274d0a.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.titulo_card {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombreado */
+}
+
+.description_card {
+  padding-top: 30px;
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+}

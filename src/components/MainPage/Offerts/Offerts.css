@@ -1,0 +1,21 @@
+.ofertas {
+    margin-top: 20px;
+    height: 50vh;
+    background-image: url(https://images3.alphacoders.com/133/1334603.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ofertas article {
+    text-align: center; /* Alinea el texto horizontalmente al centro */
+    font-size: 50px; /* Tamaño de fuente */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    padding-top: 2%; /* Espacio superior */
+    margin-bottom: -8%; /* Margen inferior negativo */
+    color: white; /* Color de texto blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreado */
+  }
