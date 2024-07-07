@@ -1,12 +1,26 @@
 .ofertas {
     margin-top: 20px;
     height: 50vh;
-    background-image: url(https://images3.alphacoders.com/133/1334603.png);
+    /*background-image: url(https://images3.alphacoders.com/133/1334603.png);*/
+    background-image: url(https://wallpapersmug.com/download/1920x1080/f558c2/christmas-ornaments-decorations-holiday.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.offert-list {
+    display: flex;
+    gap: 20px; /* Reducir el gap para mejor ajuste */
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    max-width: 100%;  
+    overflow: hidden; 
+    box-sizing: border-box;
+    padding: 10px; /* Añadir padding para mejor ajuste */
+    height: 50vh; /* Asegura que ocupe toda la altura de la ventana */
 }
 
 .ofertas article {
@@ -18,4 +32,44 @@
     margin-bottom: -8%; /* Margen inferior negativo */
     color: white; /* Color de texto blanco */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreado */
+    padding-bottom: 50px;
   }
+
+  /* Media Queries */
+@media (max-width: 1200px) {
+    .ofertas {
+        height: 200vh; /* Ajuste de altura para pantallas extra pequeñas */
+    }
+    .offert-list {
+        height: 200vh;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .ofertas {
+        height: 200vh; /* Ajuste de altura para pantallas extra pequeñas */
+    }
+    .offert-list {
+        height: 200vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .ofertas {
+        height: 200vh; /* Ajuste de altura para pantallas extra pequeñas */
+    }
+    .offert-list {
+        height: 200vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .ofertas {
+        height: 200vh; /* Ajuste de altura para pantallas extra pequeñas */
+    }
+    .offert-list {
+        height: 200vh;
+    }
+
+}

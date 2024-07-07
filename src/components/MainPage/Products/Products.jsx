@@ -5,7 +5,7 @@ function Products({ planList }) {
     return (
         <div className="products">
             <article>
-                <h2>Productos</h2>
+                <h2>Plans</h2>
             </article>
             <div className="plan-list">
                 {planList}

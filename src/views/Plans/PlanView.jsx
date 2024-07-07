@@ -1,6 +1,6 @@
 import React from "react";
 import "./PlanView.css";
-import Navbar from "../components/NavBar/NavBar";
+import Navbar from "../../components/NavBar/NavBar";
 
 function PlanView({ plan }) {
   return (

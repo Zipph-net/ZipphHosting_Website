@@ -1,0 +1,10 @@
+.OffertView {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.OffertView img {
+  display: block;
+  max-width: 100%;
+}
