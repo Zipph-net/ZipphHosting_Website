@@ -1,7 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Aplica el fondo negro al cuerpo del documento */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
 }

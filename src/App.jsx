@@ -11,6 +11,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Offerts from "./components/MainPage/Offerts/Offerts";
 import Products from "./components/MainPage/Products/Products";
 import Footer from "./components/MainPage/Footer/Footer";
+import Info from "./components/MainPage/Info/Info";
 
 function App() {
   const planList = plans.map((plan, index) => (
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       <NavBar />
       <HomePage />
+      <Info />
       <Offerts offertList={offertList} />
       <Products planList={planList} />
       <Footer />

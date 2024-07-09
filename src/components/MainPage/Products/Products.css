@@ -1,28 +1,47 @@
 .products {
     margin-top: 20px;
     height: 100vh;
-    background-image: url(https://images.alphacoders.com/902/902096.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.products::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url(../../../../img/minecraft-grass-tree-desktop-wallpaper.jpg);
+    background-size: cover;
+    opacity: 0.3;
+    z-index: 1;
 }
 
 .products h2 {
     color: white;
+    position: relative;
+    z-index: 2;
 }
 
 .plan-list {
     display: flex;
-    gap: 20px; /* Reducir el gap para mejor ajuste */
+    gap: 20px;
     flex-wrap: wrap;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: center;
+    align-items: center;
     max-width: 100%;  
     overflow: hidden; 
     box-sizing: border-box;
-    padding: 10px; /* Añadir padding para mejor ajuste */
-    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    padding: 10px;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.PlansImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
 }
 
 .products article {

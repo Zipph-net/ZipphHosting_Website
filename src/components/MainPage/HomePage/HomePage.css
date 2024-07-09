@@ -1,104 +1,160 @@
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
-html, body {
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
-body {
-    background: rgb(15, 15, 15);
-}
-
-/*MAIN*/
-
-main {
-    color: black;
-}
-
-/*============================================================*/
-
-/*Contenedor Infosv*/
-.contenedor__todo {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.contenedor__infosv {
-    height: 100vh;
-    background-image: url(../../../../img/hosting.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
-.contenedor__infosv article {
-    text-align: center;
-    font-size: 50px;
-    align-items: center;
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
     justify-content: center;
-    margin: 17%;
+    align-items: center;
+    overflow: hidden;
 }
 
-.subcontenedor__infosv {
-    padding-top:  100px;
-    color: white; /* Color de texto blanco */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreado */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../img/minecraft-grass-tree-desktop-wallpaper.jpg'); /* Imagen de fondo oscura */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.07; /* Opacidad ajustada para el efecto deseado */
+    z-index: 1;
 }
 
-/*============================================================*/
-  
-
-/* Media Queries */
-@media (max-width: 1200px) {
-    .contenedor__infosv {
-        display: flex;
-        justify-content: center; /* Centrado horizontal */
-        align-items: center; /* Centrado vertical */
-        height: 100vh; /* Ajusta la altura al 100% del viewport */
-        text-align: center; /* Asegura que el texto esté centrado */
-        background-size: cover;
-    }
-    
-    .contenedor__infosv article {
-        font-size: 50px;
-        max-width: 800px; /* Opcional: limita el ancho máximo del contenido */
-        margin: 0 auto; /* Centra el artículo horizontalmente */
-        padding: 5vw; /* Ajusta el relleno en relación al ancho del viewport */
-    }
+.carousel {
+    position: relative;
+    width: 90%;
+    max-width: 150vh;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    border: 2px solid rgba(66, 66, 66, 0.521);
 }
 
-@media (max-width: 992px) {
-    .contenedor__infosv {
-        display: flex;
-        justify-content: center; /* Centrado horizontal */
-        align-items: center; /* Centrado vertical */
-        height: 100vh; /* Ajusta la altura al 100% del viewport */
-        text-align: center; /* Asegura que el texto esté centrado */
-        background-size: cover;
-    }
-    
-    .contenedor__infosv article {
-        font-size: 50px;
-        max-width: 800px; /* Opcional: limita el ancho máximo del contenido */
-        margin: 0 auto; /* Centra el artículo horizontalmente */
-        padding: 5vw; /* Ajusta el relleno en relación al ancho del viewport */
-    }
+.carousel-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 414px) {
-    .contenedor__infosv {
-        display: flex;
-        justify-content: center; /* Centrado horizontal */
-        align-items: center; /* Centrado vertical */
-        height: 100vh; /* Ajusta la altura al 100% del viewport */
-        text-align: center; /* Asegura que el texto esté centrado */
-        background-size: cover;
-    }
-    
-    .contenedor__infosv article {
-        font-size: 20px;
-        max-width: 800px; /* Opcional: limita el ancho máximo del contenido */
-        margin: 0 auto; /* Centra el artículo horizontalmente */
-        padding: 5vw; /* Ajusta el relleno en relación al ancho del viewport */
-    }
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.carousel-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-text h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.carousel-text h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.carousel-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.carousel-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente oscuro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: rgba(34, 34, 34, 0.486); /* Más oscuro al pasar el mouse */
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los botones */
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    z-index: 3; /* Asegura que estén sobre el carousel */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.carousel-control.prev {
+    left: 20px; /* Posición a la izquierda */
+}
+
+.carousel-control.next {
+    right: 20px; /* Posición a la derecha */
+}
+
+.carousel-control:hover {
+    background-color: rgba(34, 34, 34, 0.486); /* Color de fondo más oscuro al pasar el mouse */
 }
