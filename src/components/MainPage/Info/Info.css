@@ -75,7 +75,6 @@
 }
 
 .Container1:hover, .Container2:hover, .Container3:hover {
-    transform: scale(1.02); /* Aumenta un 2% el tamaño original */
     background-size: 6vh; /* Mantiene el mismo tamaño de la imagen al pasar el ratón por encima */
     background-color: rgb(12, 12, 12); /* Color de fondo modificado */
 }

@@ -3,7 +3,7 @@ import './HomePage.css'; // Asegúrate de tener el archivo CSS adecuado importad
 
 const images = [
     {
-        src: '../../../../img/listo1.jpg',
+        src: '/img/listo1.jpg',
         alt: 'Imagen 1',
         title: 'WONDERFUL.',
         subtitle: 'ISLAND',
@@ -11,7 +11,7 @@ const images = [
         buttonText: 'Read More'
     },
     {
-        src: '../../../../img/listo1.jpg',
+        src: '/img/listo1.jpg',
         alt: 'Imagen 2',
         title: 'AMAZING.',
         subtitle: 'BEACH',
@@ -19,7 +19,7 @@ const images = [
         buttonText: 'Discover'
     },
     {
-        src: '../../../../img/listo1.jpg',
+        src: '/img/listo1.jpg',
         alt: 'Imagen 3',
         title: 'BEAUTIFUL.',
         subtitle: 'NATURE',

@@ -49,7 +49,7 @@ nav > ul > li {
 }
 
 nav > ul > li:first-child > a {
-    background-image: url(../../../img/favicon.png);
+    background-image: url(../../../public/img/favicon.png);
     background-size: 60px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -57,7 +57,7 @@ nav > ul > li:first-child > a {
 }
 
 nav > ul > li:first-child:hover > a {
-    background-image: url(../../../img/favicon.png);
+    background-image: url(../../../public/img/favicon.png);
     background-size: 60px;
     background-repeat: no-repeat;
     background-position: center center;

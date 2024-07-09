@@ -2,7 +2,7 @@
     margin-top: 20px;
     height: 50vh;
     /*background-image: url(https://images3.alphacoders.com/133/1334603.png);*/
-    background-image: url('../../../../img/halloween.jpg');
+    background-image: url('../../../../public/img/halloween.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

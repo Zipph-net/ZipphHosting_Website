@@ -9,7 +9,7 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url(../../../../img/minecraft-grass-tree-desktop-wallpaper.jpg);
+    background-image: url('../../../../public/img/minecraft-grass-tree-desktop-wallpaper.jpg');
     background-size: cover;
     opacity: 0.3;
     z-index: 1;
