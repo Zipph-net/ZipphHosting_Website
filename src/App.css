@@ -1,3 +1,19 @@
 .App h1 {
   text-align: center;
 }
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 0.5rem; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo del riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0); /* Color del fondo del riel */
+}
+
+/* Estilo del pulgar (la parte que se desplaza) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 0, 0, 0.5)); /* Fondo de gradiente de negro a rojo */
+  border-radius: 20px; /* Borde redondeado del pulgar */
+}
