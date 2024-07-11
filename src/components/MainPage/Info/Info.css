@@ -49,21 +49,21 @@
 }
 
 .Container1 {
-    background-image: url('../../../../public/support3.svg');
+    background-image: url('../../../../public/svg/support3.svg');
     background-size: 5vh; /* Tamaño inicial de la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: 5% center; /* Posición inicial de la imagen */
 }
 
 .Container2 {
-    background-image: url('../../../../public/uptime.svg');
+    background-image: url('../../../../public/svg/uptime.svg');
     background-size: 5vh; /* Tamaño inicial de la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: 5% center; /* Posición inicial de la imagen */
 }
 
 .Container3 {
-    background-image: url('../../../../public/connection.svg');
+    background-image: url('../../../../public/svg/connection.svg');
     background-size: 5vh; /* Tamaño inicial de la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: 5% center; /* Posición inicial de la imagen */
