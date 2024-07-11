@@ -2,11 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    height: 50vh;
+    margin-top: 0px;
+    height: auto;
     background: rgb(15, 15, 15);
     font-family: "Kode Mono", monospace; /* Cambia a Montserrat */
     padding: 0 20px;
+    box-shadow: 0px 0px 2px 2px #00000046;
 }
 
 /* Resto de estilos usando Montserrat */
@@ -21,7 +22,8 @@
 .info2 {
     max-width: 40vw;
     color: white;
-    margin-top: 2vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-right: 22vw;
 }
 
@@ -43,7 +45,7 @@
     background: rgb(15, 15, 15);
     margin-bottom: 1rem;
     padding: 3vh;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 2px 2px #00000046;
 }
 
 .Container1 {

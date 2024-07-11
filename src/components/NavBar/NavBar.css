@@ -1,66 +1,77 @@
 /* HEADER */
-
 .header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     background: white;
-    font-family: sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     z-index: 5;
 }
-  
+
 .contenedor__barra {
     width: 100%;
     height: 80px;
-    text-transform: uppercase;
     font-weight: 600;
     background: rgb(15, 15, 15);
     padding: 0px 20px;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.5);
-    display: flex;
-    justify-content: space-between; /* Ajuste clave para separar los elementos */
-    align-items: center;
-}
-  
-.menu_barra {
-    max-width: 1200px;
-    margin: auto;
-    height: 100%;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.5);
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-/*Menu interactivo*/
+.menu_barra1, .menu_barra2 {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Ajuste para distribuir el espacio */
+}
+
+.titleNav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: rgba(255, 0, 0, 0.5);
+    text-align: center; /* Centra el texto */
+}
+
+.menu_barra1 {
+    justify-content: flex-end;
+    margin-right: 2%; /* Ajuste según sea necesario */
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+.menu_barra2 {
+    justify-content: flex-start;
+    margin-left: 2%;
+    font-size: 18px;
+}
+
+.nav-items {
+    display: flex;
+}
+
 nav {
-    height: 100%; 
+    height: 100%;
 }
 
 nav > ul {
     height: 100%;
     display: flex;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 nav > ul > li {
-    height: 100%;
+    height: auto;
     list-style: none;
     position: relative;
-
+    padding: 10px;
 }
 
-nav > ul > li:first-child > a {
-    background-image: url(../../../public/img/favicon.png);
-    background-size: 60px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 20px 40px;
-}
-
-nav > ul > li:first-child:hover > a {
-    background-image: url(../../../public/img/favicon.png);
-    background-size: 60px;
-    background-repeat: no-repeat;
-    background-position: center center;
+nav > ul > li:hover {
+    background: #1c1c1d;
+    color: rgb(204, 203, 203);
 }
 
 nav > ul > li > a {
@@ -72,12 +83,8 @@ nav > ul > li > a {
     color: white;
 }
 
-nav > ul > li > a:hover {
-    background: #1c1c1d;
-    color: rgb(204, 203, 203);
-}
 
-/*SUBMENU*/
+/* SUBMENU */
 
 nav ul li ul {
     width: 200px;
@@ -86,7 +93,7 @@ nav ul li ul {
     position: absolute;
     text-transform: none;
     font-weight: 500;
-    top: 80px;
+    top: 75px;
     right: -35px; /* Ajusta este valor según sea necesario */
     padding: 14px 0px;
     visibility: hidden;
@@ -132,12 +139,13 @@ nav ul li ul li a:hover {
     background: rgba(255, 0, 0, 0.5);
 }
 
-  /* Botón Login */
-  .login_register {
+/* Botón Login */
+.login_register {
     display: flex;
     align-items: center;
+    margin-left: 20px; /* Ajusta según sea necesario */
 }
-  
+
 .login_register a {
     font-size: small;
     background: rgba(255, 0, 0, 0.568);
@@ -146,89 +154,13 @@ nav ul li ul li a:hover {
     text-decoration: none;
     padding: 10px 20px;
     margin-right: 10px; /* Ajuste para separar el botón de los demás */
-    
 }
 
 .login_register a:hover {
     background: red;
-    color:white;
+    color: white;
 }
 
 .menu-toggle {
     display: none; /* Ocultar el botón de menú por defecto */
-}
-
-@media (max-width: 800px) {
-    /* Estilos para el menú desplegable */
-    nav {
-        position: fixed;
-        top: 80px;
-        left: -100%; /* Ocultar el menú fuera de la pantalla */
-        width: 100%;
-        height: calc(100vh - 80px);
-        background-color: rgb(15, 15, 15);
-        padding: 20px 0;
-        z-index: 1000;
-        transition: left 0.3s ease;
-    }
-
-    nav.active {
-        left: 0; /* Mostrar el menú al activarlo */
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul li a {
-        padding: 14px 20px;
-        color: white;
-        text-align: left;
-        border-bottom: none;
-    }
-    
-    /* Estilos para el botón de menú */
-    .menu-toggle {
-        display: block; /* Mostrar el botón de menú en pantallas pequeñas */
-        position: absolute;
-        top: 20px; /* Ajusta la posición superior según necesites */
-        right: 20px; /* Ajusta la posición derecha según necesites */
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: white;
-        z-index: 15;
-    }
-
-    /* Estilos para el botón de login */
-    .login_register {
-        display: flex;
-        justify-content: center; /* Centrar horizontalmente */
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 20px; /* Ajusta el margen superior según necesites */
-    }
-
-    .login_register a {
-        font-size: small;
-        background: rgba(255, 0, 0, 0.568);
-        border-radius: 8px;
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
-        margin-right: 10px; /* Ajuste para separar el botón de los demás */
-    }
-
-    .login_register a:hover {
-        background: red;
-    }
 }

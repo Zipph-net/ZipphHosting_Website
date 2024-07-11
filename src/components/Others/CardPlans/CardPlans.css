@@ -1,104 +1,86 @@
 .CardPlans {
+  position: relative;
   width: 330px;
-  height: 450px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px #3333;
-  background-color: #343a46;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  background: rgba(121, 120, 120, 0.199);
   padding: 10px;
   padding-top: 30px;
   text-align: center;
-  background-image: url(https://thumbs.dreamstime.com/b/fondo-retro-del-papel-estilo-grunge-beige-ligero-vertical-107645964.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 0px 0px 2px 2px #00000046;
 }
 
 .CardPlans:hover {
-  background-image: url(https://i.pinimg.com/originals/2b/9b/8c/2b9b8cd3f380c6b3182fbcca7e274d0a.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: rgb(12, 12, 12);
+}
+
+.imagePlan {
+  width: 50px;
+  height: 50px;
+  margin-top: 10%;
+}
+
+.CardPlanBox {
+  border: 2px solid rgba(0, 0, 0, 0.356);
+  background: rgba(20, 20, 20, 0.788);
+}
+
+.pricePlans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.5);
+  box-shadow: 0px 0px 2px 2px #00000046;
+  color: white;
+  width: auto;
+}
+
+.priceTitlePlans {
+  font-weight: normal;
+}
+
+.CardPlans-content {
+  padding-top: 10%;
+}
+
+.CardInfoPlans {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.CardMorePlans {
+  border: 1px solid white;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+
+.CardMorePlans:hover {
   cursor: pointer;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  color: rgba(255, 0, 0, 0.5);
 }
 
 .titulo_CardPlans {
   font-size: 25px;
   font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombreado */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .description_CardPlans {
-  padding-top: 30px;
-  padding-left: 20px;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  padding-left: 0%;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
-  .CardPlans {
-    width: 300px;
-    height: 420px;
-  }
 
-  .titulo_CardPlans {
-    font-size: 22px;
-  }
-
-  .description_CardPlans {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 992px) {
-  .CardPlans {
-    width: 280px;
-    height: 400px;
-  }
-
-  .titulo_CardPlans {
-    font-size: 20px;
-  }
-
-  .description_CardPlans {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 768px) {
-  .CardPlans {
-    width: 45%; /* Ajusta el ancho para que quepan dos tarjetas por fila */
-    height: 370px;
-  }
-
-  .titulo_CardPlans {
-    font-size: 18px;
-  }
-
-  .description_CCardPlans {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 576px) {
-  .CardPlans {
-    width: 200px; /* Una tarjeta por fila en pantallas pequeñas */
-    height: 200px;
-    padding-top: 5px;
-    margin-bottom: -15px;
-    margin-top: 30px;
-  }
-
-  .titulo_CardPlans {
-    font-size: 12px;
-  }
-
-  .description_CardPlans {
-    font-size: 9px;
-    padding-top: 0px;
-    padding-left: 10px;
-  }
-}

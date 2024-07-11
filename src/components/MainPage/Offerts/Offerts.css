@@ -1,6 +1,6 @@
 .ofertas {
-    margin-top: 20px;
-    height: 50vh;
+    margin-top:0px;
+    height: auto;
     /*background-image: url(https://images3.alphacoders.com/133/1334603.png);*/
     background-image: url('../../../../public/img/halloween.jpg');
     background-repeat: no-repeat;
@@ -19,8 +19,10 @@
     max-width: 100%;  
     overflow: hidden; 
     box-sizing: border-box;
-    padding: 10px; /* Añadir padding para mejor ajuste */
-    height: 50vh; /* Asegura que ocupe toda la altura de la ventana */
+    padding-top: 2%; /* Añadir padding para mejor ajuste */
+    padding-bottom: 5%;
+    height: auto; /* Asegura que ocupe toda la altura de la ventana */
+    
 }
 
 .ofertas article {
@@ -29,10 +31,10 @@
     align-items: center; /* Alinea verticalmente */
     justify-content: center; /* Centra horizontalmente */
     padding-top: 2%; /* Espacio superior */
-    margin-bottom: -8%; /* Margen inferior negativo */
+    margin-bottom: auto; /* Margen inferior negativo */
     color: white; /* Color de texto blanco */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreado */
-    padding-bottom: 50px;
+    padding-bottom: 2%;
   }
 
   /* Media Queries */

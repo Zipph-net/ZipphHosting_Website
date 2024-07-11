@@ -7,8 +7,8 @@ function Footer() {
             <article>
                 <h2 className='enlace_footer'>Enlaces</h2>
             </article>
-            <h1 className='titulo_footer'>Zipph</h1>
-            <p className='copyright_footer'>© 2024 Zipph. All rights reserved.</p>
+            <h1 className='titulo_footer'>ZIPPH</h1>
+            <p className='copyright_footer'>© 2024 ZIPPH. All rights reserved.</p>
         </div>
         
     )

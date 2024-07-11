@@ -3,12 +3,13 @@
     background-color: #333; /* Color de fondo del footer */
     background-color: rgb(24, 24, 24); /* Color de fondo rojo */
     padding: 20px; /* Espaciado interno */
-    margin-top: 20px;
+    margin-top: 0px;
     height: 70vh; /* Altura del footer del 70% del viewport */
     display: flex; /* Usa flexbox para alinear verticalmente */
     flex-direction: column; /* Dirección de columnas para apilar elementos */
     justify-content: space-between; /* Espacio entre elementos */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 0px 2px 2px #00000046;
 }
 
 .enlace_footer {

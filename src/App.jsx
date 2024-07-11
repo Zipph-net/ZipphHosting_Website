@@ -15,11 +15,11 @@ import Info from "./components/MainPage/Info/Info";
 
 function App() {
   const planList = plans.map((plan, index) => (
-    <CardPlans key={index} title={plan.name} description={plan.description} image={plan.image} />
+    <CardPlans key={index} title={plan.name} description={plan.description} image={plan.image} price={plan.price} />
   ));
 
   const offertList = offerts.map((offert, index) => (
-    <CardOfferts key={index} title={offert.name} description={offert.description} price={offert.price} />
+    <CardOfferts key={index} title={offert.name} description={offert.description} price={offert.price} priceNormal={offert.priceNormal} />
   ));
 
   return (
