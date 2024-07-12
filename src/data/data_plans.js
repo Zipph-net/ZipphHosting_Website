@@ -13,7 +13,7 @@ const plans = [
     - 24/7 Support\n
     `,
     image:
-      "../../public/svg/bronze.svg",
+      "/svg/bronze.svg",
     price: "100,99",
     },
   {
@@ -28,7 +28,7 @@ const plans = [
     - 24/7 Support\n
     `,
     image:
-      "../../public/svg/silver.svg",
+      "/svg/silver.svg",
       price: "100,99",
     },
   {
@@ -43,7 +43,7 @@ const plans = [
     - 24/7 Support\n
     `,
     image:
-      "../../public/svg/gold3.svg",
+      "/svg/gold3.svg",
     price: "100,99",
   },
   {
@@ -57,7 +57,7 @@ const plans = [
     - 10 Gb Storage\n
     - 24/7 Support\n
     `,
-    image: "../../public/svg/diamond.svg",
+    image: "/svg/diamond.svg",
     price: "100,99",
   },
   {
@@ -71,7 +71,7 @@ const plans = [
     - 10 Gb Storage\n
     - 24/7 Support\n
     `,
-    image: "../../public/svg/ruby.svg",
+    image: "/svg/ruby.svg",
     price: "100,99",
   },
 ];
