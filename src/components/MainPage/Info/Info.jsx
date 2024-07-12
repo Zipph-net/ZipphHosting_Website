@@ -5,7 +5,7 @@ function Info() {
     return (
         <div className="info-container">
             <div className="info1">
-                <h2 className='TitleInfo1'>SERVIDORES DE ALTA CALIDAD</h2>
+                <h2 className='TitleInfo1'>SERVIDORES DE ALTA EFICIENCIA</h2>
                 <p className='DescInfo1'>Estamos comprometidos en brindar el mejor servicio, al mejor precio posible. Somos el proveedor #1 de Minecraft Hosting en Español.</p>
             </div>
             <div className="info2">

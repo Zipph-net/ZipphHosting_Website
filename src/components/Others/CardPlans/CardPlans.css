@@ -13,7 +13,8 @@
 }
 
 .CardPlans:hover {
-  background-color: rgb(12, 12, 12);
+  background-color: rgba(37, 37, 37, 0.507);
+  transition: all 0.3s;
 }
 
 .imagePlan {
@@ -63,6 +64,7 @@
   cursor: pointer;
   border: 1px solid rgba(255, 0, 0, 0.5);
   color: rgba(255, 0, 0, 0.5);
+  transition: all 0.3s;
 }
 
 .titulo_CardPlans {

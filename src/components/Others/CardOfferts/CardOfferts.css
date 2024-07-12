@@ -14,6 +14,7 @@
 
 .CardOfferts:hover {
   background-color: rgb(12, 12, 12);
+  transition: all 0.3s;
 }
 
 .CardOfferts:first-of-type .CardOfferts-content::before {
@@ -73,6 +74,7 @@
   cursor: pointer;
   border: 1px solid rgba(255, 0, 0, 0.5);
   color: rgba(255, 0, 0, 0.5);
+  transition: all 0.3s;
 }
 
 .titulo_CardOfferts {

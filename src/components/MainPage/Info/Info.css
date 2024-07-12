@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
 .info-container {
     display: flex;
     justify-content: space-between;
@@ -12,7 +14,7 @@
 
 /* Resto de estilos usando Montserrat */
 .info1 {
-    color: white;
+    color: rgba(255, 255, 255, 0.856);
     max-width: 20vw;
     margin-top: 2vh;
     margin-left: 22vw;
@@ -21,7 +23,7 @@
 
 .info2 {
     max-width: 40vw;
-    color: white;
+    color: rgba(255, 255, 255, 0.856);
     margin-top: 5%;
     margin-bottom: 5%;
     margin-right: 22vw;
@@ -31,6 +33,9 @@
     margin-bottom: 3vh;
     padding: 0;
     text-align: left;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.856);
 }
 
 .DescInfo1 {
@@ -76,6 +81,7 @@
 }
 
 .Container1:hover, .Container2:hover, .Container3:hover {
+    transition: all 0.3s;
     transform: scale(1.02); /* Aumenta un 2% el tamaño original */
     background-color: rgb(12, 12, 12); /* Color de fondo modificado */
 }
