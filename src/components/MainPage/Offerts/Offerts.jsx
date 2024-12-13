@@ -4,8 +4,9 @@ import './Offerts.css';
 function Offerts({ offertList }) {
     return (
         <div className="ofertas">
+            <div className='offertsImage'></div>
             <article>
-                <h2>Ofertas</h2>
+                <h2 className='offertTitle'>Ofertas</h2>
             </article>
             <div className="offert-list">
                 {offertList}

@@ -1,13 +1,27 @@
 .ofertas {
-    margin-top:0px;
+    margin-top: 0px;
     height: auto;
-    /*background-image: url(https://images3.alphacoders.com/133/1334603.png);*/
-    background-image: url('../../../../public/img/halloween.jpg');
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    text-align: center; /* Alinea el texto horizontalmente al centro */
+}
+
+.offertsImage {
+    height: auto; /* Ajusta la altura según sea necesario */
+    background-image: 
+        linear-gradient(to right, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.795) 80%, rgba(0, 0, 0, 0) 100%), /* Gradiente desde la mitad hacia la derecha */
+        url('/img/1334603.png'); /* Imagen de fondo de ejemplo */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute; /* Posiciona absolutamente para que esté detrás del contenido */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Envía la imagen al fondo detrás de todo */
 }
 
 .offert-list {
@@ -16,62 +30,26 @@
     flex-wrap: wrap;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
-    max-width: 100%;  
-    overflow: hidden; 
+    max-width: 100%;
+    overflow: hidden;
     box-sizing: border-box;
     padding-top: 2%; /* Añadir padding para mejor ajuste */
     padding-bottom: 5%;
     height: auto; /* Asegura que ocupe toda la altura de la ventana */
-    
+    position: relative; /* Añade posición relativa para ajustar z-index */
 }
 
 .ofertas article {
-    text-align: center; /* Alinea el texto horizontalmente al centro */
     font-size: 50px; /* Tamaño de fuente */
-    align-items: center; /* Alinea verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    padding-top: 2%; /* Espacio superior */
-    margin-bottom: auto; /* Margen inferior negativo */
     color: white; /* Color de texto blanco */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreado */
+    padding-top: 2%; /* Espacio superior */
+    margin-bottom: auto; /* Margen inferior negativo */
     padding-bottom: 2%;
-  }
-
-  /* Media Queries */
-@media (max-width: 1200px) {
-    .ofertas {
-        height: 200vh; /* Ajuste de altura para pantallas extra pequeñas */
-    }
-    .offert-list {
-        height: 200vh;
-    }
-    
+    position: relative; /* Añade posición relativa para ajustar z-index */
+    z-index: 2; /* Asegura que esté sobre la imagen de fondo */
 }
 
-@media (max-width: 992px) {
-    .ofertas {
-        height: 200vh; /* Ajuste de altura para pantallas extra pequeñas */
-    }
-    .offert-list {
-        height: 200vh;
-    }
-}
-
-@media (max-width: 768px) {
-    .ofertas {
-        height: 200vh; /* Ajuste de altura para pantallas extra pequeñas */
-    }
-    .offert-list {
-        height: 200vh;
-    }
-}
-
-@media (max-width: 576px) {
-    .ofertas {
-        height: 200vh; /* Ajuste de altura para pantallas extra pequeñas */
-    }
-    .offert-list {
-        height: 200vh;
-    }
-
+.offertTitle {
+    z-index: 5; /* Asegura que el título esté sobre el contenido */
 }
