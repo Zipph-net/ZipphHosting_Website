@@ -1,8 +1,8 @@
 <?php 
     session_start();
 
-    if (isset($_SESSION['usuario'])) {
-        header("location: /login-register/a");
+    if (isset($_SESSION['username'])) {
+        header("location: /");
     }
 ?>
 
@@ -44,8 +44,8 @@
                 <form action="php/login_usuario_be.php" method="POST" class="formulario__login">
 
                     <h2>Iniciar Sesion</h2>
-                    <input type="text" placeholder="Correo Electronico" name="email">
-                    <input type="password" placeholder="Contraseña" name="contrasena">
+                    <input type="text" placeholder="Correo Electronico" name="email_address">
+                    <input type="password" placeholder="Contraseña" name="password_hash">
                     <button>Entrar</button>
 
                 </form>
@@ -53,10 +53,10 @@
                 <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
 
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre Completo" name="nombre_completo">
-                    <input type="text" placeholder="Correo Electronico" name="email">
-                    <input type="text" placeholder="Nombre de Usuario" name="usuario">
-                    <input type="password" placeholder="Contraseña" name="contrasena">
+                    <input type="text" placeholder="Nombre Completo" name="full_name">
+                    <input type="text" placeholder="Correo Electronico" name="email_address">
+                    <input type="text" placeholder="Nombre de Usuario" name="username">
+                    <input type="password" placeholder="Contraseña" name="password_hash">
                     <button>Registrarse</button>
 
                 </form>
