@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
     "axios": "^1.7.9",
     "curso-react": "file:",
     "react": "^18.2.0",

@@ -3,11 +3,11 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <footer class="footer">
+        <footer className="footer">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></link>
-  	         <div class="container">
-  	 	        <div class="row">
-  	 		        <div class="footer-col">
+  	         <div className="container">
+  	 	        <div className="row">
+  	 		        <div className="footer-col">
   	 			        <h4>company</h4>
   	 			        <ul>
   	 				        <li><a href="#">about us</a></li>
@@ -16,7 +16,7 @@ function Footer() {
   	 				        <li><a href="#">affiliate program</a></li>
   	 			        </ul>
   	 		        </div>
-  	 		        <div class="footer-col">
+  	 		        <div className="footer-col">
   	 			        <h4>get help</h4>
   	 			        <ul>
   	 				        <li><a href="#">FAQ</a></li>
@@ -26,7 +26,7 @@ function Footer() {
   	 				        <li><a href="#">payment options</a></li>
   	 			        </ul>
   	 		        </div>
-  	 		        <div class="footer-col">
+  	 		        <div className="footer-col">
   	 			        <h4>online shop</h4>
   	 			        <ul>
   	 				        <li><a href="#">watch</a></li>
@@ -35,13 +35,13 @@ function Footer() {
   	 				        <li><a href="#">dress</a></li>
   	 			        </ul>
   	 		        </div>
-                    <div class="footer-col">
+                    <div className="footer-col">
                         <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <div className="social-links">
+                            <a href="#"><i className="fab fa-facebook-f"></i></a>
+                            <a href="#"><i className="fab fa-twitter"></i></a>
+                            <a href="#"><i className="fab fa-instagram"></i></a>
+                            <a href="#"><i className="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <h2 className='titulo_footer'>
