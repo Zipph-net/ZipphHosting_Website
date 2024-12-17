@@ -2,6 +2,7 @@ import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';  // Importa useAuth0
 import './NavBar.css'; // Importa tus estilos CSS aquí si los tienes
 
+
 function Navbar() {
     const { loginWithRedirect, logout, isAuthenticated } = useAuth0();  // Desestructuramos loginWithRedirect, logout e isAuthenticated de useAuth0
 
