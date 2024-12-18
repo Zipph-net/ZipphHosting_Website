@@ -40,10 +40,7 @@ function App() {
       <Info />
       <Offerts offertList={offertList} />
       <Products planList={planList} />
-      <Footer />
-
-      <button onClick={handleLogin}>Iniciar sesión</button>
-      <button onClick={handleLogout}>Cerrar sesión</button>
+      <Footer /> 
     </div>
   );
 }

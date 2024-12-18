@@ -1,0 +1,89 @@
+/* Mantenimiento - Fondo y centrado */
+.maintenance-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/007/107/930/non_2x/building-construction-site-background-free-vector.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Contenedor central */
+.maintenance-content {
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: space-between; /* Espacio entre la imagen y el texto */
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 900px; /* Ajusta el tamaño máximo */
+}
+
+/* Imagen a la izquierda o derecha */
+.maintenance-image {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: 200px;
+    object-fit: cover; /* Asegura que la imagen mantenga proporciones */
+    border-radius: 8px;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo del texto */
+.maintenance-text {
+    max-width: 500px; /* Ajusta el tamaño del texto */
+    text-align: left;
+}
+
+/* Título y párrafos */
+.maintenance-container h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.maintenance-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Estilo para el footer */
+.maintenance-footer {
+    font-size: 16px;
+    color: #f1f1f1;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .maintenance-content {
+        flex-direction: column; /* Apila la imagen y el texto en dispositivos pequeños */
+    }
+
+    .maintenance-image {
+        margin-bottom: 20px; /* Espacio entre la imagen y el texto en pantallas pequeñas */
+    }
+
+    .maintenance-container h1 {
+        font-size: 28px;
+    }
+
+    .maintenance-container p {
+        font-size: 16px;
+    }
+}

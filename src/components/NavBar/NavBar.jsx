@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 import { useAuth0 } from '@auth0/auth0-react';  // Importa useAuth0
 import './NavBar.css'; // Importa tus estilos CSS aquí si los tienes
 
@@ -9,51 +9,51 @@ function Navbar() {
     return (
         <div className='navBar'>
             <ul className='leftList'>
-                <li><a href="#">GameServers</a>
+                <li><Link to="/maintenance">GameServers</Link>
                     <div className='dropDown'>
                         <ul>
-                            <li><a href="#">Minecraft</a></li>
-                            <li><a href="#">Rust</a></li>
-                            <li><a href="#">Arma&nbsp;3</a></li>
-                            <li><a href="#">FiveM</a></li>
+                            <li><Link to="/minecraft">Minecraft</Link></li>
+                            <li><Link to="/rust">Rust</Link></li>
+                            <li><Link to="/arma-3">Arma&nbsp;3</Link></li>
+                            <li><Link to="/fivem">FiveM</Link></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">TeamSpeak&nbsp;3</a>
+                <li><Link to="/maintenance">TeamSpeak&nbsp;3</Link>
                     <div className='dropDown'>
                         <ul>
-                            <li><a href="#">2GB</a></li>
-                            <li><a href="#">4GB</a></li>
-                            <li><a href="#">6GB</a></li>
-                            <li><a href="#">8GB</a></li>
+                            <li><Link to="/maintenance">2GB</Link></li>
+                            <li><Link to="/maintenance">4GB</Link></li>
+                            <li><Link to="/maintenance">6GB</Link></li>
+                            <li><Link to="/maintenance">8GB</Link></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Storage</a></li>
+                <li><Link to="/maintenance">Storage</Link></li>
             </ul>
-            <h1 className='titleNavBar'><a href="/">ZIPPH</a></h1>
+            <h1 className='titleNavBar'><Link to="/">ZIPPH</Link></h1>
             <ul className='rightList'>
-                <li><a href="#">Dedicated&nbsp;Server</a>
+                <li><Link to="/maintenance">Dedicated&nbsp;Server</Link>
                     <div className='dropDown'>
                         <ul>
-                            <li><a href="#">2GB</a></li>
-                            <li><a href="#">4GB</a></li>
-                            <li><a href="#">6GB</a></li>
-                            <li><a href="#">8GB</a></li>
+                            <li><Link to="/maintenance">2GB</Link></li>
+                            <li><Link to="/maintenance">4GB</Link></li>
+                            <li><Link to="/maintenance">6GB</Link></li>
+                            <li><Link to="/maintenance">8GB</Link></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Web&nbsp;Hosting</a>
+                <li><Link to="/maintenance">Web&nbsp;Hosting</Link>
                     <div className='dropDown'>
                         <ul>
-                            <li><a href="#">2GB</a></li>
-                            <li><a href="#">4GB</a></li>
-                            <li><a href="#">6GB</a></li>
-                            <li><a href="#">8GB</a></li>
+                            <li><Link to="/maintenance">2GB</Link></li>
+                            <li><Link to="/maintenance">4GB</Link></li>
+                            <li><Link to="/maintenance">6GB</Link></li>
+                            <li><Link to="/maintenance">8GB</Link></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Support</a></li>
+                <li><Link to="/maintenance">Support</Link></li>
             </ul>
             <div className='login_register'>
                 {/* Botón de Login */}

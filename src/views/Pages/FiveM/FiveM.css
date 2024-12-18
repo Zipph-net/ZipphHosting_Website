@@ -1,0 +1,6 @@
+/* Minecraft.css */
+.fivem-main {
+    background-color: #f4f4f4;  /* Color de fondo claro para la página */
+    padding-top: 80px;  /* Asegúrate de que la navbar no se superponga */
+    padding-bottom: 400px;
+}
